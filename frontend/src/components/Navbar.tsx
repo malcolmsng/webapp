@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 py-2 flex items-center justify-between">
         {/* Logo */}
         <div className="text-2xl font-bold text-gray-800">
-          <NavLink to="/">MyApp</NavLink>
+          <NavLink to="/">Ask Me Anything</NavLink>
         </div>
 
         {/* Desktop Menu */}
