@@ -45,6 +45,6 @@ Thumbs.db
 
 # TypeScript
 *.tsbuildinfo
-
 # Bun build output
 bun-manifest.json
+
