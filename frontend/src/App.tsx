@@ -8,9 +8,10 @@ import Contacts from "./pages/Contacts";
 function App() {
   return (
     <>
-      <main className="flex flex-col">
+      <main className="flex flex-col h-screen">
         <Navbar />
-        <div className="container mx-auto px-4 py-8 flex-1">
+
+        <div className="overflow-auto container mx-auto px-4 py-8  flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             {/* <Route path="/about" element={<About />} />

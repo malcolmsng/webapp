@@ -31,15 +31,15 @@ const Home: React.FC = () => {
     scrollToBottom();
   }, [messages]);
   return (
-    <div className="flex flex-col">
-      <div className="flex-grow overflow-auto p-4 bg-white">
+    <div className="flex flex-col justify-evenly h-full overflow-auto">
+      <div className="flex-grow overflow-auto p-4 bg-white basis-full">
         {messages.map((msg, index) => (
           <TextBubble key={index} message={msg}></TextBubble>
         ))}
       </div>
-      <div className="sticky bottom-0">
-        <TextInput onSend={handleSend} />
-      </div>
+      <div></div>
+
+      <TextInput onSend={handleSend} />
     </div>
   );
 };

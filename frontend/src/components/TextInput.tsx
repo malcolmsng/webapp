@@ -48,18 +48,17 @@ const TextInput: React.FC<TextInputProps> = ({ onSend }) => {
   };
 
   return (
-    <div className="flex items-center p-4 border-t border-gray-200 bg-gray-50">
+    <div className="flex items-center p-1.5 m-4 ring-1 ring-gray-300 rounded-lg p-2  focus-within:ring-1 focus-within:ring-blue-500 ">
       <textarea
         ref={textareaRef}
-        className="flex-grow resize-none max-h-40 overflow-auto border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-        placeholder="Type your message..."
+        className="flex-grow  resize-none max-h-20 overflow-auto  outline-none"
         value={inputValue}
         onChange={handleChange}
-        onKeyPress={handleKeyPress}
+        onKeyDown={handleKeyPress}
         rows={1}
-      />
+      ></textarea>
       <button
-        className="ml-2 text-white bg-blue-500 hover:bg-blue-600 rounded-lg p-2 focus:outline-none disabled:bg-gray-400"
+        className="ml-2 text-white bg-blue-500 hover:bg-blue-600 rounded-lg p-1.5 focus:outline-none disabled:bg-gray-400"
         onClick={handleSendClick}
         disabled={inputValue.trim() === ""}
         aria-label="Send message"
